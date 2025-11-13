@@ -11,17 +11,21 @@ La funcionalidad clave es que estas tarjetas se pueden arrastrar y soltar (drag 
 
 ## Tecnologias Utilizadas
 
-### Frontend
-
-- **REACT(JSX,JS)**
-
 ### Backend
 
-- **C# Y SQLServer**
+- **C# ASP.NET 8**
+- **SQLServer**
+- **AutoMapper**
+- **Entity Framework Core**
+- **BCrypt.Net-Core**
+- **Microsoft.AspNetCore.Authentication.JwtBearer**
+- **Microsoft.EntityFrameworkCore.SqlServer**
+- **Microsoft.EntityFrameworkCore.Tools**
+- **Swashbuckle.AspNetCore**
 
 ---
 
-## ?? Tabla de Contenidos
+## Tabla de Contenidos
 
 * [Autenticación (`api/auth`)](#autenticación-apiauth)
 * [Tableros (`api/boards`)](#tableros-apiboards)
