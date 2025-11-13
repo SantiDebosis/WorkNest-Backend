@@ -106,7 +106,7 @@ namespace WorkNest.Controllers
         }
 
         [HttpGet("users")]
-        [Authorize(Roles = $"{ROLE.MOD}, {ROLE.ADMIN}")]
+        [Authorize(Roles = ROLE.ADMIN)]
         async public Task<ActionResult<List<UserWithoutPassDTO>>> GetUsers()
         {
             try
@@ -131,4 +131,3 @@ namespace WorkNest.Controllers
         }
     }
 }
-

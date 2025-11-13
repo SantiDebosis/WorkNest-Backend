@@ -39,7 +39,7 @@ namespace WorkNest.Services
             await _taskRepo.CreateOneAsync(task);
 
             var taskDto = _mapper.Map<TaskDTO>(task);
-            taskDto.AssignedUser = _mapper.Map<UserWithoutPassDTO>(user); 
+            taskDto.AssignedUser = _mapper.Map<UserWithoutPassDTO>(user);
 
             return taskDto;
         }
@@ -65,8 +65,8 @@ namespace WorkNest.Services
             var userId = int.Parse(userClaims.FindFirstValue("id") ?? "0");
             var userRoles = userClaims.FindAll(ClaimTypes.Role).Select(r => r.Value);
 
-            
-            if (task.AssignedUserId != userId && !userRoles.Contains(ROLE.ADMIN) && !userRoles.Contains(ROLE.MOD))
+
+            if (task.AssignedUserId != userId && !userRoles.Contains(ROLE.ADMIN))
             {
                 throw new HttpResponseError(HttpStatusCode.Forbidden, "You are not authorized to move this task");
             }

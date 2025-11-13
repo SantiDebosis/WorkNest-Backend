@@ -24,7 +24,7 @@ namespace WorkNest.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = $"{ROLE.MOD}, {ROLE.ADMIN}")]
+        [Authorize(Roles = ROLE.ADMIN)]
         public async Task<ActionResult<TaskDTO>> CreateTask([FromBody] CreateTaskDTO dto)
         {
             try
@@ -39,7 +39,7 @@ namespace WorkNest.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = $"{ROLE.MOD}, {ROLE.ADMIN}")]
+        [Authorize(Roles = ROLE.ADMIN)]
         public async Task<ActionResult> DeleteTask(int id)
         {
             try

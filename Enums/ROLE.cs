@@ -4,6 +4,5 @@
     {
         public const string USER = "User";
         public const string ADMIN = "Admin";
-        public const string MOD = "Mod";
     }
 }

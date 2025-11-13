@@ -1,6 +1,23 @@
 # WorkNest API Documentation
 
 Esta es la documentación oficial para la API de WorkNest, un backend construido para gestionar tableros de tareas, autenticación y usuarios.
+Es una aplicación web desarrollada para la gestión de tareas y proyectos, la cual implementa el modelo Kanban. El objetivo de WorkNest es permitir una organización visual del trabajo. La aplicación le permite a los usuarios:
+
+- **Crear Tableros, que representan los proyectos.**
+- **Definir Columnas dentro de esos tableros, que representan las etapas del flujo (por ejemplo: "Pendiente", "En Proceso", "Hecho").**
+- **Y añadir Tarjetas, que son las tareas individuales.**
+
+La funcionalidad clave es que estas tarjetas se pueden arrastrar y soltar (drag and drop) entre las columnas. Esto permite que un usuario o un equipo pueda ver, de un solo vistazo, el estado exacto de cada tarea. En resumen, WorkNest es una herramienta para centralizar y visualizar el progreso de un proyecto de forma clara y sencilla.
+
+## Tecnologias Utilizadas
+
+### Frontend
+
+- **REACT(JSX,JS)**
+
+### Backend
+
+- **C# Y SQLServer**
 
 ---
 

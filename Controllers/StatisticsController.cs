@@ -9,7 +9,7 @@ namespace WorkNest.Controllers
 {
     [Route("api/statistics")]
     [ApiController]
-    [Authorize(Roles = $"{ROLE.MOD}, {ROLE.ADMIN}")]
+    [Authorize(Roles = ROLE.ADMIN)]
     public class StatisticsController : ControllerBase
     {
         private readonly StatisticsService _statsService;

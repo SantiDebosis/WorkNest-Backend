@@ -45,7 +45,7 @@ namespace WorkNest.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = $"{ROLE.MOD}, {ROLE.ADMIN}")] 
+        [Authorize(Roles = ROLE.ADMIN)]
         public async Task<ActionResult<BoardDetailsDTO>> CreateBoard([FromBody] CreateBoardDTO dto)
         {
             var board = await _boardService.CreateBoard(dto);
@@ -53,7 +53,7 @@ namespace WorkNest.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = $"{ROLE.MOD}, {ROLE.ADMIN}")] 
+        [Authorize(Roles = ROLE.ADMIN)]
         public async Task<ActionResult> DeleteBoard(int id)
         {
             try
